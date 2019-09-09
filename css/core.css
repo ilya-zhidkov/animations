@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes slide-from-left-to-right {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes slide-from-edges-to-the-center {
+    from { left: 0%; right: 0%; }
+    to { left: 50%; right: 50%; }
+}
+
+@keyframes slide-from-center-to-the-edges {
+    from { left: 50%; right: 50%; }
+    to { left: 0%; right: 0%; }
+}
